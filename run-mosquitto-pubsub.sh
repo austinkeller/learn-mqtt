@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-docker run -it \
+docker run -it --rm \
+  --network="host" \
   eclipse-mosquitto "$@"
