@@ -1,6 +1,17 @@
 A repo containing work for learning MQTT. Started from following along
 in the course hosted at https://github.com/wduraes/Workshops/tree/master/MQTT%20Talk
 
+## Prerequisites
+
+- docker
+
+Note that I've only tested this on linux. The networking for Windows or Mac
+may still work if you use `host.docker.internal` everywhere you'd use
+`localhost`. So pass `-h host.docker.internal` to the mosquitto commands. Also
+in Node-RED use `host.docker.internal` when defining the MQTT in/out nodes.
+
+## Run the things!
+
 ### Start the mosquitto broker
 
 ```bash
